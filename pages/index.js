@@ -42,7 +42,6 @@ export default function Home() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       /><br />
-
       {users.find((u) => u.email === email && !u.password) ? (
         <>
           <input
@@ -64,11 +63,10 @@ export default function Home() {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-        /><br />
+        />
       )}
-
+      <br />
       {error && <div style={{ color: "red" }}>{error}</div>}
-
       <button onClick={handleLogin}>התחבר</button>
     </div>
   );
