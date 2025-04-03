@@ -9,7 +9,7 @@ export default function Home() {
 
   const users = [
     { email: "kaikov@gmail.com", password: "Admin123", role: "admin", active: true },
-    { email: "invited@user.com", password: "", role: "user", active: true },
+    { email: "yossik@gilat.net", password: "12345", role: "user", active: true },
   ];
 
   const validatePassword = (pw) => {
